@@ -9,9 +9,8 @@ llm_config = {
     "api_key":"not-needed"
   }
 ],
+"cache_seed":None
 }
-
-
 
 assistant = AssistantAgent(name="assistant", llm_config=llm_config)
 
@@ -23,4 +22,4 @@ user_proxy = UserProxyAgent(
     },
 )
 
-user_proxy.initiate_chat(assistant, message="when was the last prediction on 'end of world'?")
+user_proxy.initiate_chat(assistant, message="give me code in python that gives last week monday date")
